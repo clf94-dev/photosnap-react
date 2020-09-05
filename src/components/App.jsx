@@ -5,6 +5,7 @@ import Stories from './pages/Stories';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                     <Route path='/pricing' component={Pricing}></Route>
                     
                 </Switch>
-                
+                <Footer/>
             </Router>
         </div>
     )
