@@ -63,7 +63,7 @@
                 height: 45vh;
                 position: absolute;
                 top: 80px;
-                left: -100%;
+                left: 100%;
                 opacity: 1;
                 transition: all 0.5s ease;
                 &.active {
@@ -144,6 +144,100 @@
             @media screen and (max-width: 756px) {
                 display: none;
             }
+        }
+    }
+}
+
+//---------------------Cta section ----------------------
+.cta-cont {
+    img {
+        @media screen and (min-width: 756px) {
+            width: 100%;
+        }
+        position: absolute;
+        z-index: -1;
+    }
+    .cta-content {
+        padding: 4% 7%;
+        height: 280px;
+        h2 {
+            color: white;
+            font-weight: 400;
+            font-size: 48px;
+            @media screen and (min-width: 756px) {
+                argin-right: 45%;
+            }
+        }
+    }
+}
+
+//---------------------Footer Section -----------------------
+.footer-cont {
+    padding: 7%;
+    background-color: black;
+    color: white;
+    @media screen and (max-width: 756px) {
+        text-align: center;
+    }
+    .social-row {
+        margin: 20px auto;
+        @media screen and (min-width: 756px) {
+            margin-top: 25%;
+        }
+        i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .faceb {
+            &:hover {
+                background: -webkit-linear-gradient(45deg, (#6028F1), (#63AFDB));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .yout {
+            &:hover {
+                background: -webkit-linear-gradient(45deg, (#D3205A), #FF5A5A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .twitt {
+            &:hover {
+                background: -webkit-linear-gradient(45deg, (#27718A), (#65FFEB));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .pint {
+            &:hover {
+                background: -webkit-linear-gradient(45deg, (#DE3838), #F6C683);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .instag {
+            &:hover {
+                background: -webkit-linear-gradient(45deg, (#5A77FF), #BC7198, (#FFC593));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    .footer-links {
+        @media screen and (max-width: 756px) {
+            margin-bottom: 45px;
+        }
+        p {
+            text-decoration: none !important;
+            color: white;
+            font-size: 18px;
+            margin: 12px auto;
+        }
+    }
+    .copy-col {
+        p {
+            margin-top: 25px;
         }
     }
 }
