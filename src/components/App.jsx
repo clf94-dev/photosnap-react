@@ -7,6 +7,8 @@ import Pricing from './pages/Pricing';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+import './styles/App.css'
+
 function App() {
     return (
         <div>
