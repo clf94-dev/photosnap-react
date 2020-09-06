@@ -6,6 +6,7 @@ function Pricing() {
     return (
         <div>
             <IntroFeatPric index='1'/>
+            
             <Cta/>
         </div>
     )
