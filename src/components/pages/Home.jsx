@@ -4,6 +4,8 @@ import HomeIntro from '../HomeIntro'
 import HomeStories from '../HomeStories';
 import HomeFeatures from '../HomeFeatures';
 
+import '../styles/App.css'
+
 
 function Home() {
     return (

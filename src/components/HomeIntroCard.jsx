@@ -10,10 +10,10 @@ function HomeIntroCard(props) {
     return (
         <div>
             <Grid container direction='row' className={props.classes}>
-                <Grid item lg={8} sm={4} xs={12}>
+                <Grid item lg={7} sm={5} xs={12} className='img-col'>
                     <img src={IntroIMGD[props.index]} alt=""/>
                 </Grid>
-                <Grid item lg={4} sm={8} xs={12}>
+                <Grid item lg={5} sm={7} xs={12} className='text-col'>
                     <h2>
                         {props.title}
                     </h2>

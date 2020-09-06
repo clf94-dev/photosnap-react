@@ -10,7 +10,7 @@ function FeatureCard(props) {
     return (
         <div>
 
-            <Grid item md={4} sm={12} xs={12} direction='column'>
+            <Grid item lg={4} sm={12} xs={12} >
                 <img src={featIMGD[props.index]} alt=""/>
                 <h4>{props.title}</h4>
                 <p>{props.text}</p>
