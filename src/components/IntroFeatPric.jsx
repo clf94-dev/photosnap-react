@@ -1,11 +1,12 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-
 import {IntroData} from './IntroData'
 
 import Features from '../images/features/desktop/hero.jpg'
-
 import Pricing from '../images/pricing/desktop/hero.jpg'
+
+import './styles/App.css'
+
 
 function IntroFeatPric(props) {
     const IntroImgD =[Features, Pricing];
