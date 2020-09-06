@@ -248,6 +248,29 @@
   margin: 10px auto;
 }
 
+.feat-cont {
+  padding: 7%;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.feat-cont .feat-card {
+  padding: 1% 3%;
+}
+
+.feat-cont .feat-card img {
+  margin-bottom: 20px;
+}
+
+.feat-cont .feat-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.feat-cont .feat-card p {
+  margin-bottom: 0;
+}
+
 .cta-cont {
   border-left: 4px solid linear-gradient(to bottom, #5A77FF, #BC7198, #FFC593);
 }
@@ -304,6 +327,7 @@
 
 .footer-cont .social-row i {
   margin-right: 10px;
+  cursor: pointer;
   font-size: 20px;
 }
 
@@ -343,7 +367,11 @@
   }
 }
 
-.footer-cont .footer-links p {
+.footer-cont .footer-links .single-link {
+  text-decoration: none !important;
+}
+
+.footer-cont .footer-links .single-link p {
   text-decoration: none !important;
   color: white;
   font-size: 18px;

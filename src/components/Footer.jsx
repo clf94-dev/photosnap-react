@@ -20,16 +20,16 @@ function Footer() {
                     </Grid>
                 </Grid>
                 <Grid item direction='column' md={3} xs={12} className='footer-links'>
-                    <Link to='/'>
+                    <Link to='/'  className='single-link'>
                         <p>Home</p>
                     </Link>
-                    <Link to='/stories'>
+                    <Link to='/stories' className='single-link'>
                         <p>Stories</p>
                     </Link>
-                    <Link to='/features'>
+                    <Link to='/features' className='single-link'>
                         <p>Features</p>
                     </Link>
-                    <Link to='/pricing'>
+                    <Link to='/pricing' className='single-link'>
                         <p>Pricing</p>
                     </Link>
 

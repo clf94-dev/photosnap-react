@@ -6,7 +6,7 @@ import { HomeFeaturesData } from './HomeFeaturesData'
 function HomeFeatures() {
     return (
         
-            <Grid container direction='row'>
+            <Grid container direction='row' className='feat-cont'>
                 {HomeFeaturesData.map(item => {
                     return (<FeatureCard
                     home='true'
