@@ -372,6 +372,152 @@ body {
   height: 100%;
 }
 
+.pricing-section {
+  padding: 5% 7% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-section .pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pricing-section .pricing-wrapper .pricing-heading {
+  color: #000000;
+}
+
+.pricing-section .pricing-wrapper .switch {
+  margin: 10px auto 40px;
+  justify-content: center !important;
+}
+
+@media screen and (min-width: 756px) {
+  .pricing-section .pricing-wrapper .switch {
+    margin: 10px auto 70px;
+  }
+}
+
+.pricing-section .pricing-wrapper .switch .options {
+  font-size: 20px;
+  color: #000000;
+}
+
+.pricing-section .pricing-wrapper .pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card {
+  background: white;
+  box-shadow: 0 6px 20px gray;
+  width: 400px;
+  height: 500px;
+  text-decoration: none;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2) {
+  transform: scale(1.1);
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 5;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:nth-child(2):hover {
+  transform: scale(1.11);
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease-out;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 15% 7%;
+  height: 500px;
+  text-align: center;
+  align-items: center !important;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3.light {
+  color: #000000;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h2.light {
+  color: #000000;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo p {
+  font-size: 16px;
+  padding: 0 7%;
+  margin-bottom: 80px;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo p.text {
+  margin: 20px auto;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features {
+  margin: 1% 2%;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .pricing-container-features.light {
+  color: #000000;
+}
+
+@media screen and (max-width: 850px) {
+  .pricing-wrapper {
+    margin: 0 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .pricing-wrapper .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .pricing-wrapper .pricing-container-card {
+    width: 100%;
+  }
+  .pricing-wrapper .pricing-container-card:nth-child(2) {
+    transform: scale(1) !important;
+    margin: 30px;
+  }
+  .pricing-wrapper .pricing-container-card:nth-child(2):hover {
+    transform: none !important;
+  }
+  .pricing-wrapper .pricing-container-card:hover {
+    transform: none !important;
+  }
+}
+
 .cta-cont {
   border-left: 4px solid linear-gradient(to bottom, #5A77FF, #BC7198, #FFC593);
 }
