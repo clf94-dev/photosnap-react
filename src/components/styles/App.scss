@@ -10,8 +10,13 @@ sans-serif;
     font-family: $font;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 //----------------Navbar Section --------------
 .navbar {
+    overflow: hidden;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -196,6 +201,13 @@ sans-serif;
         img {
             z-index: -1;
             width: 100%;
+            @media screen and (max-width: 500px) {
+                width: 121%;
+                &:hover {
+                    scale: 1 !important;
+                }
+            }
+            height: 100%;
             &:hover {
                 scale: 1.05;
             }
