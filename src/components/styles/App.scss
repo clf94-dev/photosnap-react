@@ -1,6 +1,6 @@
 $pureBlack: #000000;
 $lightGrey: #DFDFDF;
-$pureWhite: #000000;
+$pureWhite: #ffffff;
 $font: 'DM Sans',
 sans-serif;
 * {
@@ -49,8 +49,8 @@ sans-serif;
                 font-size: 1.8rem;
                 cursor: pointer;
             }
-            .fa-times,
-            .fa-bars {
+            .fa-bars,
+            .fa-times {
                 color: black;
             }
         }
@@ -186,7 +186,39 @@ sans-serif;
 
 .reversed {
     @media screen and (min-width: 500px) {
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
+    }
+}
+
+//----------------------Home Stories component---------------
+.story-cont {
+    .img-cont {
+        img {
+            z-index: -1;
+            width: 100%;
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+    .text-col {
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 40px;
+        color: $pureWhite;
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        hr {
+            color: $lightGrey;
+            width: 200%;
+            margin: 10px auto;
+        }
     }
 }
 
@@ -208,7 +240,7 @@ sans-serif;
             font-weight: 400;
             font-size: 48px;
             @media screen and (min-width: 756px) {
-                argin-right: 45%;
+                margin-right: 45%;
             }
         }
     }

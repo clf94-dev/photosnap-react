@@ -8,16 +8,16 @@ import Embed from '../images/features/desktop/embed.svg'
 function FeatureCard(props) {
     const featIMGD = [Responsive, Limit, Embed]
     return (
-        <div>
+        
 
-            <Grid item lg={4} sm={12} xs={12} >
+            <Grid item lg={4} md={4} sm={12} xs={12} >
                 <img src={featIMGD[props.index]} alt=""/>
                 <h4>{props.title}</h4>
                 <p>{props.text}</p>
 
             </Grid>
 
-        </div>
+        
     )
 }
 

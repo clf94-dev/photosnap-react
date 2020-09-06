@@ -6,11 +6,13 @@ import HomeStoryCard from './HomeStoryCard'
 import { Grid } from '@material-ui/core'
 import { HomeStoriesData } from './HomeStoriesData'
 
+import './styles/App.css'
+
 function HomeStories() {
    
     return (
         <div>
-            <Grid container direction='row'>
+            <Grid container direction='row' >
                 {HomeStoriesData.map(item => {
                     return (<HomeStoryCard
                         key={item.index}

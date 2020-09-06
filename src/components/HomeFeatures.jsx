@@ -5,7 +5,7 @@ import { HomeFeaturesData } from './HomeFeaturesData'
 
 function HomeFeatures() {
     return (
-        <div>
+        
             <Grid container direction='row'>
                 {HomeFeaturesData.map(item => {
                     return (<FeatureCard
@@ -16,7 +16,7 @@ function HomeFeatures() {
                         text={item.text}/>)
                 })}
             </Grid>
-        </div>
+        
     )
 }
 
