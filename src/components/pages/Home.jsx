@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import HomeIntro from '../HomeIntro'
 import HomeStories from '../HomeStories';
+import HomeFeatures from '../HomeFeatures';
 
 
 function Home() {
@@ -9,6 +10,8 @@ function Home() {
         <div>
        <HomeIntro />
        <HomeStories/>
+       <HomeFeatures/>
+
         </div>
     );
 }
