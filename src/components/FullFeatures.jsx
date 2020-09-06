@@ -1,23 +1,25 @@
 import React from 'react'
 import FeatureCard from './FeatureCard'
 import {Grid} from '@material-ui/core'
-import { HomeFeaturesData } from './HomeFeaturesData'
+import { FeaturesData } from './FeaturesData'
 
-function HomeFeatures() {
+
+
+function FullFeatures() {
     return (
-        
+        <div>
             <Grid container direction='row' className='feat-cont'>
-                {HomeFeaturesData.map(item => {
+                {FeaturesData.map(item => {
                     return (<FeatureCard
-                    home='false'
+                    home='true'
                         key={item.index}
                         index={item.index}
                         title={item.title}
                         text={item.text}/>)
                 })}
             </Grid>
-        
+        </div>
     )
 }
 
-export default HomeFeatures
+export default FullFeatures
