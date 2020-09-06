@@ -150,6 +150,7 @@
 
 //---------------------Cta section ----------------------
 .cta-cont {
+    border-left: 4px solid linear-gradient(to bottom, (#5A77FF), #BC7198, (#FFC593));
     img {
         @media screen and (min-width: 756px) {
             width: 100%;

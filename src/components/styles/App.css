@@ -181,6 +181,10 @@
   }
 }
 
+.cta-cont {
+  border-left: 4px solid linear-gradient(to bottom, #5A77FF, #BC7198, #FFC593);
+}
+
 .cta-cont img {
   position: absolute;
   z-index: -1;
