@@ -1,14 +1,14 @@
 import React from 'react'
 import {Grid} from '@material-ui/core'
-
+import './styles/App.css'
 import TopStoryIMG from '../images/stories/desktop/moon-of-appalacia.jpg'
 
 function TopStory() {
     return (
         <div>
             <Grid container direction='row' className='topStory-cont'>
-                <Grid item md={6} xs={12} className='text-col'>
-                    <h4 className='intro-p'>Last month's featured story</h4>
+                <Grid item sm={6} xs={12} className='text-col'>
+                    <h3 className='intro-p'>Last month's featured story</h3>
                     <h2>Hazy full moon of Appalachia</h2>
                     <Grid container direction='row'>
                         <p>

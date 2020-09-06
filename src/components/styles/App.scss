@@ -254,6 +254,54 @@ body {
     }
 }
 
+//-----------------------TopStory section-------------------------
+.topStory-cont {
+    .text-col {
+        padding: 7% 10% 5% 3%;
+        @media screen and (min-width: 700px) {
+            min-height: 650px;
+            color: $pureWhite;
+            padding: 10% 10% 10% 7%;
+        }
+        h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 48px;
+            text-transform: uppercase;
+            @media screen and (min-width: 756px) {
+                padding-right: 25%;
+            }
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .author-p {
+            @media screen and (min-width: 756px) {
+                margin-left: 30px;
+            }
+            font-weight: bold;
+        }
+    }
+    .img-col {
+        @media screen and(min-width: 700px) {
+            position: absolute;
+            z-index: -1;
+            img {
+                width: 200%;
+            }
+        }
+    }
+    @media screen and(max-width: 756px) {
+        flex-direction: column-reverse !important;
+    }
+}
+
 //---------------------Cta section ----------------------
 .cta-cont {
     border-left: 4px solid linear-gradient(to bottom, (#5A77FF), #BC7198, (#FFC593));
