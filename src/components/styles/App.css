@@ -238,6 +238,7 @@ body {
   position: absolute;
   margin-top: 350px;
   margin-left: 40px;
+  width: 270px;
   color: #ffffff;
 }
 
@@ -253,7 +254,7 @@ body {
 
 .story-cont .text-col hr {
   color: #DFDFDF;
-  width: 200%;
+  width: 100%;
   margin: 10px auto;
 }
 

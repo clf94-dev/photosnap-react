@@ -4,8 +4,15 @@ import Create from '../images/home/desktop/create-and-share.jpg'
 import Stories from '../images/home/desktop/beautiful-stories.jpg'
 import Designed from '../images/home/desktop/designed-for-everyone.jpg'
 import {Grid} from '@material-ui/core'
+import {Button} from './Button'
+import './styles/button.css'
+
+import ArrowD from '../images/shared/desktop/arrow.svg'
+import ArrowL from '../images/shared/desktop/arrow copy.svg'
+
 function HomeIntroCard(props) {
     const IntroIMGD = [Create, Stories, Designed]
+    const Arrows=[ArrowL, ArrowD];
 
     return (
         <div>
@@ -18,7 +25,18 @@ function HomeIntroCard(props) {
                         {props.title}
                     </h2>
                     <p>{props.text}</p>
-                    <button>{props.btn}</button>
+                 <Button buttonSize='btn--wide' buttonStyle={props.btnStyle} link={props.link}>
+                        <Grid container direction='row'>
+                            <Grid item xs={8}>
+                                {props.btn}
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={Arrows[props.arrow]} alt="arrow"/>
+
+                            </Grid>
+                        </Grid>
+
+                    </Button>
                 </Grid>
             </Grid>
         </div>

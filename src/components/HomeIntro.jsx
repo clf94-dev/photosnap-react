@@ -15,7 +15,10 @@ function HomeIntro() {
                         title={item.title}
                         text={item.text} 
                         classes={item.classes} 
-                        btn={item.btn} />
+                        btn={item.btn}
+                        btnStyle={item.btnStyle}
+                        arrow={item.arrow}
+                        link={item.link} />
                  
                 )
             })}

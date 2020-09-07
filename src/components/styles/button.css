@@ -1,15 +1,33 @@
 .btn {
-    padding: 3% 35%;
+    padding: 3% 15%;
     outline: none;
-    font-family: 'Montserrat';
+    font-family: 'DM Sans';
     font-size: 15px;
     border: none;
     cursor: pointer;
+    width: 100%;
+}
+
+.btn--read {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.btn--read--light {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: black;
+}
+
+.btn--read:hover,
+.btn--read--light:hover {
+    text-decoration: underline
 }
 
 .btn--primary {
     background-color: #000;
-    ;
     color: #fff;
 }
 
@@ -47,7 +65,7 @@
 }
 
 .btn--wide {
-    padding: 12px 26px;
-    font-size: 24px !important;
-    width: 100%;
+    padding: 12px 24px !important;
+    font-size: 24px;
+    width: 100% !important;
 }

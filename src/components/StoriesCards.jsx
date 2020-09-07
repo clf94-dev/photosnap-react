@@ -19,7 +19,10 @@ function StoriesCards() {
                         index={item.index}
                         title={item.title}
                         author={item.author}
-                        alt={item.imgALT} />)
+                        alt={item.imgALT}
+                        btnStyle={item.btnStyle} 
+                        arrow={item.arrow}
+                        link={item.link} />)
                 })}
             </Grid>
         </div>

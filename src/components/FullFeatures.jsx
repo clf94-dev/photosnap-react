@@ -15,7 +15,8 @@ function FullFeatures() {
                         key={item.index}
                         index={item.index}
                         title={item.title}
-                        text={item.text}/>)
+                        text={item.text}
+                        />)
                 })}
             </Grid>
         </div>
