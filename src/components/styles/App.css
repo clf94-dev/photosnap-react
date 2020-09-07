@@ -531,6 +531,7 @@ body {
 @media screen and (min-width: 756px) {
   .cta-cont img {
     width: 100%;
+    z-index: -1;
   }
 }
 

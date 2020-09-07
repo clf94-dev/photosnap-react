@@ -461,6 +461,7 @@ body {
     img {
         @media screen and (min-width: 756px) {
             width: 100%;
+            z-index: -1;
         }
         position: absolute;
         z-index: -1;
