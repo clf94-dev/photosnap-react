@@ -9,6 +9,9 @@ import './styles/button.css'
 
 import ArrowD from '../images/shared/desktop/arrow.svg'
 import ArrowL from '../images/shared/desktop/arrow copy.svg'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
 
 function HomeIntroCard(props) {
     const IntroIMGD = [Create, Stories, Designed]
@@ -16,7 +19,7 @@ function HomeIntroCard(props) {
 
     return (
         <div>
-            <Grid container direction='row' className={props.classes}>
+            <Grid container direction='row' className={props.classes} data-aos='fade-up' data-aos-duration='1500'>
                 <Grid item lg={7} sm={5} xs={12} className='img-col'>
                     <img src={IntroIMGD[props.index]} alt=""/>
                 </Grid>

@@ -6,6 +6,9 @@ import {useLovelySwitchStyles} from '@mui-treasury/styles/switch/lovely';
 import './styles/App.css'
 import {ButtonPrices} from './ButtonPrices.jsx'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 export default function Prices() {
@@ -46,7 +49,7 @@ export default function Prices() {
                             ? 'flex'
                             : 'flex'
                     }}>
-                        <div className="pricing-container-card">
+                        <div className="pricing-container-card" data-aos='fade-up' data-aos-duration='1500' >
                             <div className="pricing-container-cardInfo">
                                 <h3 className='light'>Basic</h3>
                                 <p className='text'>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
@@ -62,7 +65,7 @@ export default function Prices() {
                                 </ButtonPrices>
                             </div>
                         </div>
-                        <div className="pricing-container-card">
+                        <div className="pricing-container-card" data-aos='fade-up' data-aos-duration='1500' >
                             <div className="pricing-container-cardInfo">
                                 <h3>Pro</h3>
                                 <p className='text'>More advanced features available. Recommended for photography veterans and professionals.</p>
@@ -73,7 +76,7 @@ export default function Prices() {
                                 </ButtonPrices>
                             </div>
                         </div>
-                        <div className="pricing-container-card">
+                        <div className="pricing-container-card" data-aos='fade-up' data-aos-duration='1500' >
                             <div className="pricing-container-cardInfo">
                                 <h3 className='light'>Business</h3>
                                 <p className='text'>Additional features available such as more detailed metrics. Recommended for business owners.</p>

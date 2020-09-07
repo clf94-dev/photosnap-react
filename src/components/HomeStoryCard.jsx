@@ -25,6 +25,10 @@ import {Grid} from '@material-ui/core/'
 import {Button} from './Button'
 import './styles/button.css'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
+
 function HomeStoryCard(props) {
     const HomeStoriesIMGD = [
         Mountains,
@@ -48,7 +52,7 @@ function HomeStoryCard(props) {
 
     return (
 
-        <Grid item lg={3} sm={6} xs={12} className='story-cont'>
+        <Grid item lg={3} sm={6} xs={12} className='story-cont' data-aos='fade-right' data-aos-duration='1500'>
             <Grid container direction='row'>
 
                 <Grid item lg={12} className='img-cont'>
