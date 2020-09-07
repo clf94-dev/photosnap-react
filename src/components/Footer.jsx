@@ -3,6 +3,9 @@ import { Grid} from '@material-ui/core'
 import {Link} from 'react-router-dom';
 
 import Logo from '../images/shared/desktop/logo copy.svg'
+import { Button } from './Button';
+import './styles/button.css'
+import ArrowL from '../images/shared/desktop/arrow copy.svg'
 
 function Footer() {
     return (
@@ -36,7 +39,15 @@ function Footer() {
                 </Grid>
                 <Grid item direction='column' md={3} xs={12}></Grid>
                 <Grid item direction='column' md={3} xs={12} className='copy-col'>
-                    <button>Get an Invite</button>
+                    <Button buttonSize='btn--wide' buttonStyle='btn--read'><Grid container direction='row'>
+                            <Grid item xs={8}>
+                                GET AN INVITE
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={ArrowL} alt="arrow"/>
+
+                            </Grid>
+                        </Grid></Button>
 
                     <p>
                         Copyright 2019. All Rights Reserved</p>

@@ -8,6 +8,17 @@
     width: 100%;
 }
 
+.btn--p,
+.btn--o {
+    padding: 3% 35%;
+    outline: none;
+    font-family: 'DM Sans';
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
 .btn--read {
     background-color: transparent;
     text-transform: uppercase;
@@ -29,12 +40,19 @@
 .btn--primary {
     background-color: #000;
     color: #fff;
+    padding: 0 35% !important;
+    position: relative;
+    left: -10%;
+    margin: 0;
+    width: 100%;
 }
 
 .btn--outline {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
+    width: 100%;
+    padding: 0 20%;
     transition: all 0.3s ease-out;
 }
 

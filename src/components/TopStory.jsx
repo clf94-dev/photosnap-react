@@ -2,6 +2,10 @@ import React from 'react'
 import {Grid} from '@material-ui/core'
 import './styles/App.css'
 import TopStoryIMG from '../images/stories/desktop/moon-of-appalacia.jpg'
+import ArrowL from '../images/shared/desktop/arrow copy.svg'
+import { Button } from './Button'
+import './styles/button.css'
+
 
 function TopStory() {
     return (
@@ -20,7 +24,18 @@ function TopStory() {
                         is popularly called "mountains," especially in eastern Kentucky and West
                         Virginia, and while the ridges are not high, the terrain is extremely rugged.
                     </p>
-                    <button>Read the Story</button>
+                    <Button buttonSize='btn--wide' buttonStyle='btn--read' >
+                        <Grid container direction='row'>
+                            <Grid item xs={8}>
+                                READ THE STORY
+                            </Grid>
+                            <Grid item xs={4}>
+                                <img src={ArrowL} alt="arrow"/>
+
+                            </Grid>
+                        </Grid>
+
+                    </Button>
 
                 </Grid>
                 <Grid item md={6} xs={12} className='img-col'>

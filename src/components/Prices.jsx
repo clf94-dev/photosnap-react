@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import {Switch, Grid} from '@material-ui/core/';
-import {Button} from './Button';
-import './styles/button.css'
+
+import './styles/buttonPrices.css'
 import {useLovelySwitchStyles} from '@mui-treasury/styles/switch/lovely';
 import './styles/App.css'
+import {ButtonPrices} from './ButtonPrices.jsx'
 
 
 
@@ -56,9 +57,9 @@ export default function Prices() {
                                     }</h2>
                                     <p>per month</p>
     
-                                <Button buttonSize='btn--wide' buttonStyle='btn--primary'>
-                                    More Info
-                                </Button>
+                                <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--primary'>
+                                PICK PLAN
+                                </ButtonPrices>
                             </div>
                         </div>
                         <div className="pricing-container-card">
@@ -67,9 +68,9 @@ export default function Prices() {
                                 <p className='text'>More advanced features available. Recommended for photography veterans and professionals.</p>
                                 <h2>{checked?'$390.00':'$39.99'}</h2>
                                 <p>per month</p>
-                                <Button buttonSize='btn--wide' buttonStyle='btn--outline'>
-                                    More Info
-                                </Button>
+                                <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--outline'>
+                                PICK PLAN
+                                </ButtonPrices>
                             </div>
                         </div>
                         <div className="pricing-container-card">
@@ -78,9 +79,9 @@ export default function Prices() {
                                 <p className='text'>Additional features available such as more detailed metrics. Recommended for business owners.</p>
                                 <h2 className='light'>{checked?'$990.00':'$99.99'}</h2>
                                 <p>per month</p>
-                                <Button buttonSize='btn--wide' buttonStyle='btn--primary'>
-                                    More Info
-                                </Button>
+                                <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--primary'>
+                                    PICK PLAN
+                                </ButtonPrices>
                             </div>
                         </div>
                     </div>
