@@ -2,6 +2,9 @@ import React from 'react'
 import {Grid} from '@material-ui/core'
 import './styles/App.css'
 import TopStoryIMG from '../images/stories/desktop/moon-of-appalacia.jpg'
+import TopStoryIMGT from '../images/stories/tablet/moon-of-appalacia.jpg'
+import TopStoryIMGM from '../images/stories/mobile/moon-of-appalacia.jpg'
+
 import ArrowL from '../images/shared/desktop/arrow copy.svg'
 import { Button } from './Button'
 import './styles/button.css'
@@ -39,7 +42,7 @@ function TopStory() {
 
                 </Grid>
                 <Grid item md={6} xs={12} className='img-col'>
-                    <img src={TopStoryIMG} alt="moon of appalacia"/>
+                    <img src={TopStoryIMG} srcset={`${TopStoryIMGM} 756w, ${TopStoryIMG} 1500w, ${TopStoryIMGT} 1280w`} alt="moon of appalacia"/>
                 </Grid>
             </Grid>
         </div>

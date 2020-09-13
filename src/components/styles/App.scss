@@ -255,12 +255,15 @@ body {
 
 //-----------------------TopStory section-------------------------
 .topStory-cont {
+    padding: 0;
     .text-col {
         padding: 7% 10% 5% 3%;
-        @media screen and (min-width: 700px) {
+        color: $pureWhite;
+        @media screen and (max-width: 720px) {
+            padding: 47% 10% 10% 7%;
+            background-color: $pureBlack;
             min-height: 650px;
             color: $pureWhite;
-            padding: 10% 10% 10% 7%;
         }
         h3 {
             font-size: 18px;
@@ -281,21 +284,22 @@ body {
             margin-bottom: 10px;
         }
         .author-p {
-            @media screen and (min-width: 756px) {
+            @media screen and (min-width: 720px) {
                 margin-left: 30px;
             }
+            margin-left: 20px;
             font-weight: bold;
         }
     }
     .img-col {
-        @media screen and(min-width: 700px) {
+        @media screen and(min-width: 720px) {
             position: absolute;
             z-index: -1;
         }
         img {
-            width: 200%;
-            @media screen and (max-width: 756px) {
-                width: 100% !important;
+            width: 100%;
+            @media screen and (min-width: 720px) {
+                width: 200%;
             }
         }
     }
