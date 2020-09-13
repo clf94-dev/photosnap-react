@@ -198,8 +198,8 @@ body {
         img {
             z-index: -1;
             width: 100%;
-            @media screen and (max-width: 500px) {
-                width: 121%;
+            @media screen and (max-width: 800px) {
+                width: 200%;
                 &:hover {
                     scale: 1 !important;
                 }
@@ -320,7 +320,7 @@ body {
         @media screen and (max-width: 900px) {
             padding: 25% 7% 27.5% 7%;
         }
-        padding: 12% 7% 13% 7%;
+        padding: 12% 7% 14% 7%;
         background-color: $pureBlack;
         height: 100%;
         color: $pureWhite;

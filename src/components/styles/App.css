@@ -221,9 +221,9 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .story-cont .img-cont img {
-    width: 121%;
+    width: 200%;
   }
   .story-cont .img-cont img:hover {
     scale: 1 !important;
@@ -365,7 +365,7 @@ body {
 }
 
 .feat-pric-intro .text-col {
-  padding: 12% 7% 13% 7%;
+  padding: 12% 7% 14% 7%;
   background-color: #000000;
   height: 100%;
   color: #ffffff;
