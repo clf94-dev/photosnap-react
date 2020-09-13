@@ -358,16 +358,29 @@ body {
   }
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 720px) {
   .feat-pric-intro {
     flex-direction: column-reverse;
   }
 }
 
 .feat-pric-intro .text-col {
-  padding: 10% 7%;
+  padding: 12% 7% 13% 7%;
   background-color: #000000;
+  height: 100%;
   color: #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+  .feat-pric-intro .text-col {
+    padding: 45% 7% 10% 7%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .feat-pric-intro .text-col {
+    padding: 25% 7% 27.5% 7%;
+  }
 }
 
 .feat-pric-intro .text-col h2 {
@@ -384,7 +397,12 @@ body {
 
 .feat-pric-intro .img-col img {
   width: 100%;
-  height: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .feat-pric-intro .img-col img {
+    width: 100%;
+  }
 }
 
 .pricing-section {
