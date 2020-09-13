@@ -7,11 +7,14 @@ import { Grid } from '@material-ui/core'
 import './styles/App.css'
 import { FullStoriesData } from './FullStoriesData'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
 
 function StoriesCards() {
     return (
         <div>
-             <Grid container direction='row' >
+             <Grid container direction='row' data-aos='fade-up' data-aos-duration='1500'>
                 {FullStoriesData.map(item => {
                     return (<HomeStoryCard
                         key={item.index}

@@ -8,11 +8,16 @@ import { HomeStoriesData } from './HomeStoriesData'
 
 import './styles/App.css'
 
+
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
+
 function HomeStories() {
    
     return (
         <div>
-            <Grid container direction='row' >
+            <Grid container direction='row' data-aos='fade-right' data-aos-duration='1500' >
                 {HomeStoriesData.map(item => {
                     return (<HomeStoryCard
                         key={item.index}

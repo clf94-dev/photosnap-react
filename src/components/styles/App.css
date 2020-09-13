@@ -333,8 +333,15 @@ body {
     position: absolute;
     z-index: -1;
   }
+}
+
+.topStory-cont .img-col img {
+  width: 200%;
+}
+
+@media screen and (max-width: 756px) {
   .topStory-cont .img-col img {
-    width: 200%;
+    width: 100% !important;
   }
 }
 
@@ -524,15 +531,9 @@ body {
 }
 
 .cta-cont img {
+  width: 100%;
   position: absolute;
   z-index: -1;
-}
-
-@media screen and (min-width: 756px) {
-  .cta-cont img {
-    width: 100%;
-    z-index: -1;
-  }
 }
 
 .cta-cont .cta-content {

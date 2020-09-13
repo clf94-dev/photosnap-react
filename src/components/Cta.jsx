@@ -1,6 +1,8 @@
 import React from 'react'
 import {Grid} from '@material-ui/core'
 import CtaBGD from '../images/shared/desktop/bg-beta.jpg'
+import CtaBGM from '../images/shared/mobile/bg-beta.jpg'
+import CtaBGT from '../images/shared/tablet/bg-beta.jpg'
 
 import ArrowD from '../images/shared/desktop/arrow.svg'
 import ArrowL from '../images/shared/desktop/arrow copy.svg'
@@ -13,7 +15,7 @@ function Cta() {
     return (
         <div>
             <Grid container className='cta-cont'>
-                <img src={CtaBGD} alt="beta bag"/>
+                <img src={CtaBGD}  srcset={`${CtaBGM} 756w, ${CtaBGD} 1500w, ${CtaBGT} 1280w`}  alt="beta bag"/>
 
                 <Grid container direction='row' className='cta-content'>
                     <Grid item md={6} xs={12}>

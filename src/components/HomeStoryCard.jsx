@@ -52,7 +52,7 @@ function HomeStoryCard(props) {
 
     return (
 
-        <Grid item lg={3} sm={6} xs={12} className='story-cont' data-aos='fade-right' data-aos-duration='1500'>
+        <Grid item lg={3} sm={6} xs={12} className='story-cont' >
             <Grid container direction='row'>
 
                 <Grid item lg={12} className='img-cont'>
