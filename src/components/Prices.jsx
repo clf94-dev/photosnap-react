@@ -58,7 +58,7 @@ export default function Prices() {
                                             ? '$190.00'
                                             : '$19.99'
                                     }</h2>
-                                    <p>per month</p>
+                                          <p>per {checked? 'year':'month'}</p>
     
                                 <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--primary'>
                                 PICK PLAN
@@ -70,7 +70,7 @@ export default function Prices() {
                                 <h3>Pro</h3>
                                 <p className='text'>More advanced features available. Recommended for photography veterans and professionals.</p>
                                 <h2>{checked?'$390.00':'$39.99'}</h2>
-                                <p>per month</p>
+                                       <p>per {checked? 'year':'month'}</p>
                                 <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--outline'>
                                 PICK PLAN
                                 </ButtonPrices>
@@ -81,7 +81,7 @@ export default function Prices() {
                                 <h3 className='light'>Business</h3>
                                 <p className='text'>Additional features available such as more detailed metrics. Recommended for business owners.</p>
                                 <h2 className='light'>{checked?'$990.00':'$99.99'}</h2>
-                                <p>per month</p>
+                                      <p>per {checked? 'year':'month'}</p>
                                 <ButtonPrices  buttonSize='btnP--wide' buttonStyle='btnP--primary'>
                                     PICK PLAN
                                 </ButtonPrices>
